@@ -46,8 +46,10 @@ def audit_headline_results() -> dict[str, object]:
         raise AssertionError("Expected 46/52 positive fraction-like specifications")
 
     paired = pd.read_csv(DATA / "dpm_29fly_paired_slopes.csv")
-    if len(paired) != 29 or int(paired["right_minus_left"].gt(0).sum()) != 22:
-        raise AssertionError("Expected 22/29 positive fly-level DPM imaging effects")
+    positive_flies = int(paired["right_minus_left"].gt(0).sum())
+    negative_flies = int(paired["right_minus_left"].lt(0).sum())
+    if len(paired) != 29 or (positive_flies, negative_flies) != (22, 7):
+        raise AssertionError("Expected 22 positive and 7 negative fly-level DPM imaging effects")
     close(paired["right_minus_left"].mean(), 0.11706949285991511)
 
     point = pd.read_csv(DATA / "model_causal_point_dose_response.csv").sort_values("gate_strength")
@@ -72,6 +74,15 @@ def audit_headline_results() -> dict[str, object]:
     close(controls.loc["input_and_output_equalized", "left_right_ratio_of_means"], 1.0300499504959448)
     close(controls.loc["output_sides_swapped", "left_right_ratio_of_means"], 0.43651149779265014)
 
+    associative = pd.read_csv(DATA / "associative_steering_self_by_seed.csv")
+    reference_gate = associative[
+        associative["split"].eq("validation") & associative["stage"].eq("real_both")
+    ]
+    reference_gate_ratio = float(
+        reference_gate["mean_left_command"].mean() / reference_gate["mean_right_command"].mean()
+    )
+    close(reference_gate_ratio, 7.3182277979746315)
+
     stages = pd.read_csv(DATA / "associative_steering_stage_contrasts.csv")
     validation = stages[stages["split"].eq("validation")].set_index("contrast")
     retrieval = validation.loc["real_retrieval_only_minus_symmetrized"]
@@ -84,10 +95,12 @@ def audit_headline_results() -> dict[str, object]:
         "kc_subtypes_positive": "9/9",
         "fraction_like_specifications_positive": "46/52",
         "dpm_imaging_flies_positive": "22/29",
+        "dpm_imaging_flies_negative": "7/29",
         "dpm_imaging_mean_right_minus_left": float(paired["right_minus_left"].mean()),
         "arbor_case_counts": cohort_counts,
         "held_out_dna02_shifts_positive": "118/120",
         "structural_left_right_command_ratio_under_symmetrized_gate": structural_ratio,
+        "left_right_command_ratio_under_reference_gate": reference_gate_ratio,
         "chemical_gate_retrieval_shifts_positive": "118/120",
         "boundary": "model panels and odors are deterministic robustness units, not animals",
     }

@@ -2,8 +2,8 @@
 
 [![reproduce](https://github.com/ydchen0806/drosophila-mb-lateralization/actions/workflows/reproduce.yml/badge.svg)](https://github.com/ydchen0806/drosophila-mb-lateralization/actions/workflows/reproduce.yml)
 
-Code and figure source data for the manuscript **Chemical lateralization of the
-*Drosophila* mushroom body biases learned steering in a connectome-constrained
+Code and figure source data for the manuscript **Local mushroom-body
+lateralization biases memory-to-steering gain in a *Drosophila* connectome
 model**.
 
 The repository is a focused release extracted from a larger simulation
@@ -25,8 +25,10 @@ Model seeds and odor panels measure computational robustness, not biological
 replication. The modeled DNa02 readout is a relative steering-command
 prediction, not measured animal turning. The 6.98-fold left/right associative
 command ratio is the registered structural baseline under a symmetrized
-chemical gate; the measured chemical gate adds a smaller retrieval-stage
-modulation. A rightward sign in one reference connectome is not assumed to be a
+chemical gate; the reference-oriented gate raises the modeled total ratio to
+7.32 and adds a smaller, mainly retrieval-stage modulation. The imaging cohort
+has a positive mean but heterogeneous signs (22 positive and seven negative).
+A rightward sign in one reference connectome or cohort is not assumed to be a
 species-wide invariant: paired GRASP measurements must be analyzed for both
 signed direction and absolute lateralization at the fly level.
 

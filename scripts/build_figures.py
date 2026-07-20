@@ -24,6 +24,12 @@ GRAY = "#858585"
 LIGHT_GRAY = "#D9D9D9"
 DARK = "#222222"
 GRID = "#E6E6E6"
+PDF_METADATA = {
+    "Creator": "BioFly reproducibility pipeline",
+    "Producer": "Matplotlib",
+    "CreationDate": None,
+    "ModDate": None,
+}
 
 
 plt.rcParams.update(
@@ -92,7 +98,7 @@ def save_figure(fig: plt.Figure, stem: str) -> None:
     # Nature Neuroscience caps submitted panels at 180 mm. The fixed 7.05-inch
     # canvas is 179.1 mm; avoiding a tight bounding box prevents outer labels
     # from silently expanding the physical page beyond that limit.
-    fig.savefig(FIGURES / f"{stem}.pdf")
+    fig.savefig(FIGURES / f"{stem}.pdf", metadata=PDF_METADATA)
     fig.savefig(FIGURES / f"{stem}.png", dpi=300)
     plt.close(fig)
 
@@ -139,7 +145,7 @@ def build_statistics() -> None:
     ax_a.axvline(0.42, color=GRAY, lw=0.8, ls="--")
     ax_a.text(0.44, len(y) - 0.55, "pooled 0.42 pp", fontsize=5.7, color=GRAY, va="top")
     ax_a.set_xlabel("5-HT-predicted input, right - left (pp)")
-    ax_a.set_title("KC subtype effects")
+    ax_a.set_title("Reference-brain KC effects")
     style_axis(ax_a, "x")
     label_panel(ax_a, "a", -0.16)
 
@@ -291,8 +297,8 @@ def build_biology() -> None:
     ax_c.axhline(0, color=DARK, lw=0.7)
     ax_c.set_xlabel("flies sorted by paired effect")
     ax_c.set_ylabel("right - left slope")
-    ax_c.set_title("Fly-level right-left effects")
-    ax_c.text(0.04, 0.96, "circle: batch 1\nsquare: batch 2", transform=ax_c.transAxes, fontsize=5.2, va="top", color=GRAY)
+    ax_c.set_title("Individual signed effects")
+    ax_c.text(0.04, 0.96, "22 positive; 7 negative\ncircle: batch 1; square: batch 2", transform=ax_c.transAxes, fontsize=5.2, va="top", color=GRAY)
     style_axis(ax_c, "y")
     label_panel(ax_c, "c")
 
@@ -498,13 +504,14 @@ def build_simulation() -> None:
     ax_f.set_xticks([0, 1], ["left cue arm", "right cue arm"])
     ax_f.set_ylabel("learned contraversive command")
     ax_f.set_title("Held-out associative replay")
-    ax_f.text(0.04, 0.96, "10 validation seeds; 120 cues", transform=ax_f.transAxes, fontsize=5.2, va="top")
+    ratio = float(seed["mean_left_command"].mean() / seed["mean_right_command"].mean())
+    ax_f.text(0.04, 0.96, f"reference gate: {ratio:.2f}x L/R\n10 seeds; 120 cues", transform=ax_f.transAxes, fontsize=5.2, va="top")
     style_axis(ax_f, "y")
     label_panel(ax_f, "f", -0.14)
 
     # g, structural causal controls.
     order = ["registered", "input_mass_equalized", "output_equalized", "input_and_output_equalized", "output_sides_swapped"]
-    labels = ["registered", "input equal", "output equal", "both equal", "output swapped"]
+    labels = ["anatomy", "input equal", "output equal", "both equal", "output swapped"]
     ctrl = controls.set_index("control").reindex(order).reset_index()
     y = np.arange(len(ctrl))
     vals = ctrl["left_right_ratio_of_means"].to_numpy()
@@ -516,7 +523,7 @@ def build_simulation() -> None:
     ax_g.set_yticks(y, labels)
     ax_g.invert_yaxis()
     ax_g.set_xlabel("left/right learned-command ratio")
-    ax_g.set_title("Structural controls")
+    ax_g.set_title("Structural controls (symmetric gate)")
     style_axis(ax_g, "x")
     label_panel(ax_g, "g", -0.26)
 

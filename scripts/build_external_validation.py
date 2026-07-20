@@ -121,7 +121,16 @@ def main() -> None:
     FIGURES.mkdir(parents=True, exist_ok=True)
     out = FIGURES / "Fig6_external_connectome_validation"
     fig.savefig(out.with_suffix(".png"), dpi=300, facecolor="white")
-    fig.savefig(out.with_suffix(".pdf"), facecolor="white")
+    fig.savefig(
+        out.with_suffix(".pdf"),
+        facecolor="white",
+        metadata={
+            "Creator": "BioFly reproducibility pipeline",
+            "Producer": "Matplotlib",
+            "CreationDate": None,
+            "ModDate": None,
+        },
+    )
     plt.close(fig)
 
     metric = dict(zip(banc["metric"], banc["value"]))
