@@ -26,7 +26,9 @@ replication. The modeled DNa02 readout is a relative steering-command
 prediction, not measured animal turning. The 6.98-fold left/right associative
 command ratio is the registered structural baseline under a symmetrized
 chemical gate; the measured chemical gate adds a smaller retrieval-stage
-modulation.
+modulation. A rightward sign in one reference connectome is not assumed to be a
+species-wide invariant: paired GRASP measurements must be analyzed for both
+signed direction and absolute lateralization at the fly level.
 
 ## Quick reproduction
 
@@ -90,6 +92,9 @@ documented in [docs/FULL_REPRODUCTION.md](docs/FULL_REPRODUCTION.md) and
 [docs/DATA_PROVENANCE.md](docs/DATA_PROVENANCE.md). The extraction point and
 upstream code revisions are recorded in
 [docs/CODE_PROVENANCE.md](docs/CODE_PROVENANCE.md).
+
+Direction-agnostic GRASP statistics and input requirements are documented in
+[docs/GRASP_LATERALIZATION_ANALYSIS_CN.md](docs/GRASP_LATERALIZATION_ANALYSIS_CN.md).
 
 ## Functional-imaging data
 

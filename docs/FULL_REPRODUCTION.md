@@ -40,6 +40,21 @@ python scripts/analyze_dpm_functional_imaging_lateralization.py \
   --output-dir outputs/dpm_functional_imaging
 ```
 
+## Paired GRASP structural analysis
+
+The input must contain brain-registered left/right measurements. Negative
+controls are required to distinguish absolute biological lateralization from
+measurement noise.
+
+```bash
+python scripts/analyze_grasp_lateralization.py \
+  --input /absolute/path/to/grasp_measurements.csv \
+  --output-dir outputs/grasp_lateralization
+```
+
+The analysis reports signed population direction, right/left individual counts,
+absolute laterality and control-based permutation tests separately.
+
 ## Whole-brain DNa02 steering model
 
 Install the Torch extra, then run on CUDA or change `--device` to `cpu`:

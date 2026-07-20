@@ -39,3 +39,8 @@ workbooks requires confirmation from the experimental data owners.
 Large public connectomes, skeletons and signed connectivity matrices are not
 duplicated in Git because they total several gigabytes. Download them from the
 upstream archives and retain their upstream licenses and citations.
+
+New GRASP measurements are not included until the experimental data owners
+approve release. `scripts/analyze_grasp_lateralization.py` accepts paired
+fly-level or technical-repeat measurements without assuming a fixed rightward
+direction.
