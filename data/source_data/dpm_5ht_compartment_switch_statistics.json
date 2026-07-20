@@ -1,0 +1,14 @@
+{
+  "edge_definition": "DPM-to-KC connections with ser_avg>=0.5",
+  "alpha_prime_beta_prime_left_synapses": 65,
+  "alpha_prime_beta_prime_right_synapses": 91,
+  "alpha_prime_beta_prime_right_minus_left": 26,
+  "other_core_kc_left_synapses": 501,
+  "other_core_kc_right_synapses": 357,
+  "alpha_prime_beta_prime_positive_subtypes": 3,
+  "other_positive_subtypes": 1,
+  "subtype_label_permutation_n": 84,
+  "subtype_label_permutation_p_ge_observed": 0.023809523809523808,
+  "direction_enrichment_fisher_p_greater": 0.047619047619047616,
+  "boundary": "Exact tests quantify an internal compartment pattern in one connectome. KC subtypes and synapses are not independent animals."
+}

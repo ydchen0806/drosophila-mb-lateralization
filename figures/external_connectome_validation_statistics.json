@@ -1,0 +1,12 @@
+{
+  "male_cns_routes": 9,
+  "male_cns_core_route_min_present_both": 0.9739583333333334,
+  "male_cns_core_route_min_log_weight_spearman": 0.8671328671328673,
+  "male_cns_all_isomorphic_mass_fraction": 1.0,
+  "manc_candidate_types_matched": 13,
+  "manc_matched_types_bilateral": 9,
+  "manc_max_motor_output_fraction": 0.467680608365019,
+  "banc_metadata_neurons": 188437,
+  "banc_loaded_edges": 1926146,
+  "boundary": "external structural conservation and downstream actionability; not replication of KC left-right 5-HT-predicted input-label asymmetry"
+}

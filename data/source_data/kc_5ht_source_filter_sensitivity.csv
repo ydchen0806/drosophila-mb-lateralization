@@ -1,0 +1,8 @@
+analysis,n_connections,n_sources,right_minus_left_ser_fraction,right_minus_left_ser_fraction_pp,boundary
+all,462133,6860,0.0030142592085224953,0.3014259208522495,source-filter sensitivity inside one connectome; filters change the estimand
+exclude_DAN,412658,6532,0.0003346245568398359,0.033462455683983594,source-filter sensitivity inside one connectome; filters change the estimand
+exclude_DPM_MBIN,430878,6856,0.0031660657200848962,0.31660657200848963,source-filter sensitivity inside one connectome; filters change the estimand
+exclude_source_top_dopamine,80015,1327,0.0008709490900685249,0.08709490900685249,source-filter sensitivity inside one connectome; filters change the estimand
+exclude_low_source_confidence,217988,3326,0.0037458912925647523,0.37458912925647525,source-filter sensitivity inside one connectome; filters change the estimand
+only_source_top_5HT,158,21,-0.09277922547598388,-9.277922547598388,source-filter sensitivity inside one connectome; filters change the estimand
+exclude_top20_influential_sources,417687,6840,0.001948005072650505,0.1948005072650505,source-filter sensitivity inside one connectome; filters change the estimand

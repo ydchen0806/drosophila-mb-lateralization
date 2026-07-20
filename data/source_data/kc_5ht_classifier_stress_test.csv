@@ -1,0 +1,26 @@
+right_side_ser_probability_downshift_pp,population_right_minus_left_ser_fraction,population_right_minus_left_ser_fraction_pp,n_positive_subtypes,n_subtypes,mean_subtype_shift_pp,boundary
+0.0,0.0030142592085224953,0.3014259208522495,9,9,0.43151326216913216,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.05,0.0028721933854350843,0.28721933854350845,9,9,0.41558495547010565,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.1,0.0027641700263073806,0.27641700263073804,9,9,0.4027425843858372,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.15,0.002665657922475035,0.2665657922475035,9,9,0.3909041759898068,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.2,0.002573354945633418,0.25733549456334176,9,9,0.3796885449352564,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.25,0.0024857096370517985,0.24857096370517984,9,9,0.3689598075056374,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.3,0.002401591185029598,0.24015911850295982,9,9,0.35864019357069754,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.35,0.0023207040213949733,0.23207040213949734,9,9,0.34871225575965437,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.4,0.002242494731228236,0.22424947312282362,9,9,0.33909513383731144,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.45,0.0021670343960764607,0.21670343960764607,9,9,0.3297874625300193,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.5,0.002094039035249579,0.2094039035249579,9,9,0.32074211293873395,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.55,0.0020232461643006463,0.20232461643006464,8,9,0.31195135565710735,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.6,0.001954577194115444,0.1954577194115444,8,9,0.3034087473336277,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.65,0.001887668908432275,0.1887668908432275,7,9,0.2950774143194231,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.7,0.0018225384311885704,0.18225384311885703,7,9,0.2869440273136924,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.75,0.0017590766807010138,0.1759076680701014,7,9,0.27899506666723256,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.8,0.0016971093377803935,0.16971093377803936,7,9,0.2712198820300873,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.85,0.001636557565191433,0.1636557565191433,7,9,0.2636071323789334,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.9,0.0015772641987513063,0.15772641987513064,7,9,0.25614489299436316,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+0.95,0.001519203557199012,0.1519203557199012,7,9,0.24881975067793188,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+1.0,0.0014624698298719126,0.14624698298719127,7,9,0.24165130963208784,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+1.05,0.0014069459287889214,0.14069459287889213,7,9,0.2346258032231833,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+1.1,0.0013526068266060459,0.1352606826606046,7,9,0.22774739031914726,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+1.15,0.0012993229190610923,0.12993229190610922,7,9,0.22098576128609274,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration
+1.2,0.0012470731580547312,0.12470731580547312,7,9,0.21435070991671834,uniform right-side subtraction from KC input-edge 5-HT prediction; stress test not classifier calibration

@@ -1,0 +1,2 @@
+observed_kc_right_minus_left,observed_kc_right_minus_left_pp,null_mean,null_ci_low,null_ci_high,kc_percentile_vs_matched_placebo,empirical_p_greater,mean_fallback_sampled_neurons,boundary
+0.003201162325824818,0.3201162325824818,-0.0008133542453181824,-0.003917799676024481,0.002106864149030225,0.9966666666666667,0.006644518272425249,4692.0,"non-KC placebo matched on side, input degree and side-relative soma coordinates; source-class composition is not matched"

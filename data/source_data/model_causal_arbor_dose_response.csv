@@ -1,0 +1,12 @@
+cohort,condition_class,gate_strength,n_case_conditions,n_cases,mean_delta_lateral_code_vs_sym,sd_delta_lateral_code_vs_sym
+lateral_support_selected_72,mirror_reversed,-1.0,72,72,-0.06793521311342121,0.018802145968588316
+lateral_support_selected_72,real_lateralized,1.0,72,72,0.06911774788250329,0.01978308106459546
+lateral_support_selected_72,real_lateralized,3.0,72,72,0.20559684662569228,0.05443274377464426
+lateral_support_selected_72,shuffled_lateralized,1.0,288,72,0.001148875975775167,0.0039109588365267055
+lateral_support_selected_72,symmetrized,0.0,72,72,0.0,0.0
+effective_dimension_selected_15,mirror_reversed,-1.0,15,15,-0.05316024529221665,0.013289091739500419
+effective_dimension_selected_15,real_lateralized,1.0,15,15,0.053873738837101705,0.013882540114266817
+effective_dimension_selected_15,real_lateralized,2.0,15,15,0.1093706328361523,0.026706438341041645
+effective_dimension_selected_15,real_lateralized,3.0,15,15,0.1640542091272567,0.03842612662120813
+effective_dimension_selected_15,shuffled_lateralized,1.0,15,15,0.00012244531913522004,0.003347115723505446
+effective_dimension_selected_15,symmetrized,0.0,15,15,0.0,0.0

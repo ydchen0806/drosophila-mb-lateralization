@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this software and the associated manuscript."
+title: "Drosophila mushroom-body lateralization: analysis and simulation code"
+type: software
+version: 0.1.0
+date-released: 2026-07-20
+authors:
+  - family-names: Chen
+    given-names: Yinda
+    email: yindachen@mail.ustc.edu.cn
+repository-code: "https://github.com/ydchen0806/drosophila-mb-lateralization"
+license: MIT

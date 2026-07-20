@@ -1,0 +1,23 @@
+metric,value
+dataset,BANC v888
+data_dir,simulation/data/external/banc_v888
+graph_kind,simple
+count_threshold,5
+signed,False
+alpha,0.85
+max_iter,40
+n_nodes_metadata,188437
+n_edges_loaded,1926146
+edge_count_sum,23783342
+n_kc,4551
+n_mbon,104
+n_pam_dan,280
+n_ppl1_dan,13
+n_dpm,2
+n_apl,1
+n_sensory,16559
+n_ascending,2374
+n_descending,1331
+n_motor,805
+n_effector,220
+elapsed_s,39.272398710250854

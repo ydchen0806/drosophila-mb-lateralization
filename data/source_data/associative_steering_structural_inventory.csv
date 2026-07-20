@@ -1,0 +1,7 @@
+stage,side,n_edges,n_source_neurons,synapse_weight,signed_weight,left_to_right_ratio
+KC_to_MBON32,left,1136,1136,2980.0,2980.0,1.695108077360637
+MBON32_to_contralateral_DNa02,left,1,1,40.0,-40.0,4.0
+KC_to_MBON32,right,921,921,1758.0,1758.0,1.695108077360637
+MBON32_to_contralateral_DNa02,right,1,1,10.0,-10.0,4.0
+PPL103_to_MBON32,left,2,2,171.0,171.0,1.8387096774193548
+PPL103_to_MBON32,right,2,2,93.0,93.0,1.8387096774193548

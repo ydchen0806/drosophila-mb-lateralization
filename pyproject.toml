@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drosophila-mb-lateralization"
+version = "0.1.0"
+description = "Reproducible connectome, functional-imaging and simulation analyses for Drosophila mushroom-body lateralization"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {text = "MIT"}
+authors = [
+  {name = "Yinda Chen", email = "yindachen@mail.ustc.edu.cn"},
+]
+dependencies = [
+  "matplotlib>=3.8,<3.11",
+  "numpy>=1.26,<3",
+  "openpyxl>=3.1,<4",
+  "pandas>=2.0,<3",
+  "pyarrow>=14,<25",
+  "scipy>=1.12,<2",
+  "seaborn>=0.13,<0.14",
+]
+
+[project.optional-dependencies]
+wholebrain = ["torch>=2.4"]
+arbor = ["arbor==0.11.0"]
+dev = ["pytest>=8,<10"]
+
+[project.urls]
+Repository = "https://github.com/ydchen0806/drosophila-mb-lateralization"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

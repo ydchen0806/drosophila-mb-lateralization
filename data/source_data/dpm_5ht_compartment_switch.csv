@@ -1,0 +1,10 @@
+kc_subtype,compartment,left_high_confidence_dpm_5ht_label_synapses,right_high_confidence_dpm_5ht_label_synapses,right_minus_left_synapses,left_connections,right_connections,inference_boundary
+KCa'b'-ap1,alpha_prime_beta_prime,16,17,1,13,16,within-connectome subtype pattern among DPM-to-KC edges with ser_avg>=0.5; not biological replication or direct serotonin release
+KCa'b'-ap2,alpha_prime_beta_prime,11,31,20,11,27,within-connectome subtype pattern among DPM-to-KC edges with ser_avg>=0.5; not biological replication or direct serotonin release
+KCa'b'-m,alpha_prime_beta_prime,38,43,5,35,37,within-connectome subtype pattern among DPM-to-KC edges with ser_avg>=0.5; not biological replication or direct serotonin release
+KCab-c,other_core_kc,44,45,1,39,42,within-connectome subtype pattern among DPM-to-KC edges with ser_avg>=0.5; not biological replication or direct serotonin release
+KCab-m,other_core_kc,153,75,-78,125,65,within-connectome subtype pattern among DPM-to-KC edges with ser_avg>=0.5; not biological replication or direct serotonin release
+KCab-p,other_core_kc,20,18,-2,17,17,within-connectome subtype pattern among DPM-to-KC edges with ser_avg>=0.5; not biological replication or direct serotonin release
+KCab-s,other_core_kc,82,72,-10,75,64,within-connectome subtype pattern among DPM-to-KC edges with ser_avg>=0.5; not biological replication or direct serotonin release
+KCg-d,other_core_kc,26,16,-10,21,15,within-connectome subtype pattern among DPM-to-KC edges with ser_avg>=0.5; not biological replication or direct serotonin release
+KCg-m,other_core_kc,176,131,-45,158,118,within-connectome subtype pattern among DPM-to-KC edges with ser_avg>=0.5; not biological replication or direct serotonin release
